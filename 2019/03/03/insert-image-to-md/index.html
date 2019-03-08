@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>insert_image_to_md | Change and Action</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="方法一： 组织化管理资源文件 将配置文件_config.yml中的参数post_asset_floder默认值改为 true。 在hexo目录下执行npm install hexo-asset-image –save , 即安装本地上传图片的插件。 再执行hexo n filename, 此时在_posts文件夹中生成一个filename.md和一个filename文件夹。 把图片复制到filen">
+<meta property="og:type" content="article">
+<meta property="og:title" content="insert_image_to_md">
+<meta property="og:url" content="http://yoursite.com/2019/03/03/insert-image-to-md/index.html">
+<meta property="og:site_name" content="Change and Action">
+<meta property="og:description" content="方法一： 组织化管理资源文件 将配置文件_config.yml中的参数post_asset_floder默认值改为 true。 在hexo目录下执行npm install hexo-asset-image –save , 即安装本地上传图片的插件。 再执行hexo n filename, 此时在_posts文件夹中生成一个filename.md和一个filename文件夹。 把图片复制到filen">
+<meta property="og:locale" content="中文">
+<meta property="og:image" content="http://yoursite.com/2019/03/03/insert-image-to-md/car.jpg">
+<meta property="og:updated_time" content="2019-03-08T13:31:38.863Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="insert_image_to_md">
+<meta name="twitter:description" content="方法一： 组织化管理资源文件 将配置文件_config.yml中的参数post_asset_floder默认值改为 true。 在hexo目录下执行npm install hexo-asset-image –save , 即安装本地上传图片的插件。 再执行hexo n filename, 此时在_posts文件夹中生成一个filename.md和一个filename文件夹。 把图片复制到filen">
+<meta name="twitter:image" content="http://yoursite.com/2019/03/03/insert-image-to-md/car.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="Change and Action" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Change and Action</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Self-discipline is one of the ways to get happiness</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-insert-image-to-md" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/03/insert-image-to-md/" class="article-date">
+  <time datetime="2019-03-03T13:10:50.000Z" itemprop="datePublished">2019-03-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      insert_image_to_md
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="方法一：-组织化管理资源文件"><a href="#方法一：-组织化管理资源文件" class="headerlink" title="方法一： 组织化管理资源文件"></a>方法一： 组织化管理资源文件</h3><ol>
+<li>将配置文件<strong>_config.yml</strong>中的参数<strong>post_asset_floder</strong>默认值改为 true。</li>
+<li>在hexo目录下执行<strong>npm install hexo-asset-image –save</strong> , 即安装本地上传图片的插件。</li>
+<li>再执行<strong>hexo n filename</strong>, 此时在_posts文件夹中生成一个filename.md和一个filename文件夹。</li>
+<li>把图片复制到filename文件中，此时通过常规的markdown语法它不会出现在首页上，在Hexo3中，使用下面标签插件代码即可：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_path slug %\&#125; or \&#123;% asset_img slug [title] %\&#125; or \&#123;% asset_link slug [title] %\&#125;</span><br><span class="line">例如： &#123;% asset_img example.jpg [title] %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<hr>
+<h3 id="方法二：最简单的html图片标签"><a href="#方法二：最简单的html图片标签" class="headerlink" title="方法二：最简单的html图片标签"></a>方法二：最简单的html图片标签<img></h3><ol>
+<li>在source文件中建立images文件。</li>
+<li>在md文件中写入html图片标签：<strong><em>&lt;img src=”images/图片名.jpg”&gt;</em></strong>。</li>
+</ol>
+<hr>
+<h4 id="效果如图："><a href="#效果如图：" class="headerlink" title="效果如图："></a>效果如图：</h4><img src="/2019/03/03/insert-image-to-md/car.jpg">
+<h4 id="More-info-官网说明指南"><a href="#More-info-官网说明指南" class="headerlink" title="More info: 官网说明指南"></a>More info: <a href="https://hexo.io/zh-cn/docs/asset-folders" target="_blank" rel="noopener">官网说明指南</a></h4>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/03/03/insert-image-to-md/" data-id="cjsvpgrng0003tcrc7ew89pb7" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/03/05/python-data-analysis-and-application/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Python_Data_Analysis_and_Application
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/02/26/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">February 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/03/05/python-data-analysis-and-application/">Python_Data_Analysis_and_Application</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/03/insert-image-to-md/">insert_image_to_md</a>
+          </li>
+        
+          <li>
+            <a href="/2019/02/26/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Yang Wu<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
